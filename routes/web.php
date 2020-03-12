@@ -20,4 +20,3 @@ Route::get('/', function () {
 // Route::get('/crud/{kategori?}', 'CrudController@index');
 
 Route::resource('crud', 'CrudController');
-// Route::resource('mahasiswa', 'MahasiswaController');
