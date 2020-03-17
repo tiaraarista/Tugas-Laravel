@@ -106,7 +106,6 @@ class ProductController extends Controller
                 'nama_barang' => 'I-Phone X',
                 'kategori' => 'IOS'
             ]
-
         ];
 
         if($product){

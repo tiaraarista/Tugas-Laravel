@@ -11,21 +11,21 @@
         <label>Kode Barang :</label>
         <input type="text" class="form-control" placeholder="Kode Barang" name="kode_barang" value="{{ $p['kode_barang'] }}" required>
         <div class="invalid-feedback">
-        Harap masukkan Kode Barang.
+        Harap masukkan Kode Barang
         </div>
         </div>
         <div class="form-group"> 
         <label>Nama Barang :</label>
         <input type="text" class="form-control" placeholder="Nama barang" name="name" value="{{ $p['nama_barang'] }}" required>
         <div class="invalid-feedback">
-        Harap masukkan Nama Barang.
+        Harap masukkan Nama Barang
         </div>
         </div>
         <div class="form-group"> 
         <label>Kategori :</label>
         <input type="text" class="form-control" placeholder="Kategori" name="kategori" value="{{$p['kategori']}}" required>  
         <div class="invalid-feedback">
-        Harap masukkan Kategori.
+        Harap masukkan Kategori
         </div>
         </div>
         <input type="submit" class="btn btn-warning" value="Edit Data">

@@ -21,6 +21,8 @@
 	<link href="{{ asset('datatables/jquery.dataTables.min.css') }}" rel="stylesheet" media="screen">
 </head>
 <body>
+
     @yield('content')
+    
 </body>
 </html>

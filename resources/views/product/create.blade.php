@@ -28,6 +28,7 @@
     <input type="submit" class="btn btn-primary" value="Tambah Data">
     <a href="/product" class="btn btn-outline-primary">Kembali</a>
 </form><br>
+
 <!-- JS Validasi -->
 <script>
 (function() {

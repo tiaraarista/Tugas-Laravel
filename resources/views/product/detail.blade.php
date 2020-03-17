@@ -25,33 +25,33 @@
     <a href="{{ route('product.create') }}" class="btn btn-dark"><i class="fas fa-plus"></i> <b>Tambah Data</b></a><br>
     <div style="margin-top: 20px ">
     <table class="table table-hover table-bordered"  border="1">
-    <thead class="thead-dark">
-        <tr>
-            <th><b>Kode Barang</b></th>
-            <th><b>Nama Barang</b></th>
-            <th><b>Kategori</b></th>
-            <th><b>Aksi</b></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ($products as $p)
+        <thead class="thead-dark">
             <tr>
-                <td>{{$p['kode_barang']}}</td>
-                <td>{{$p['nama_barang']}}</td>
-                <td>{{$p['kategori']}}</td>
-                <td><center><a href="{{route('product.show', $p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-eye"></i> Lihat</a> 
-                            <a href="{{route('product.edit',$p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-user-edit"></i> Edit</a><br>
-                            <form action="{{route('product.destroy', $p['kode_barang'])}}" method="post">
-                                @csrf
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" value="{{$p['kode_barang']}}" name="name">
-                                <input type="submit" value="Hapus" onclick="return alert('Apakah anda yakin?')">
-                            </form>
-                    </center>
-                </td>
+                <th><b>Kode Barang</b></th>
+                <th><b>Nama Barang</b></th>
+                <th><b>Kategori</b></th>
+                <th><b>Aksi</b></th>
             </tr>
-        @endforeach
-    </tbody>
+        </thead>
+        <tbody>
+            @foreach ($products as $p)
+                <tr>
+                    <td>{{$p['kode_barang']}}</td>
+                    <td>{{$p['nama_barang']}}</td>
+                    <td>{{$p['kategori']}}</td>
+                    <td><center><a href="{{route('product.show', $p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-eye"></i> Lihat</a> 
+                                <a href="{{route('product.edit',$p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-user-edit"></i> Edit</a><br>
+                                <form action="{{route('product.destroy', $p['kode_barang'])}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" value="{{$p['kode_barang']}}" name="name">
+                                    <input type="submit" value="Hapus" onclick="return alert('Apakah anda yakin?')">
+                                </form>
+                        </center>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
     </table>
     </div>
 </div>
