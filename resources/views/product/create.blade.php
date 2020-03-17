@@ -1,29 +1,29 @@
-@extends('tampilan')
+@extends('product.master')
 @section('content')
 <div class="container" style="margin-top: 20px ">
     <center><h2><b>Inventory Management</b></h2></center><br><br><br>
 <form action="{{route('product.store')}}" method="post" class="needs-validation" novalidate>
     @csrf
     <div class="form-group">
-    <label>Kode Barang :</label>
-    <input type="text" placeholder="Kode Barang" class="form-control" name="kode_barang" required>
-    <div class="invalid-feedback">
-        Harap masukkan Kode Barang.
-      </div>
+        <label>Kode Barang :</label>
+        <input type="text" placeholder="Kode Barang" class="form-control" name="kode_barang" required>
+        <div class="invalid-feedback">
+            Harap masukkan Kode Barang.
+        </div>
     </div>
     <div class="form-group"> 
-    <label>Nama Barang :</label>       
-    <input type="text" placeholder="Nama Barang" class="form-control" name="name" required> 
-    <div class="invalid-feedback">
-        Harap masukkan Nama Barang.
-      </div>
+        <label>Nama Barang :</label>       
+        <input type="text" placeholder="Nama Barang" class="form-control" name="name" required> 
+        <div class="invalid-feedback">
+            Harap masukkan Nama Barang.
+        </div>
     </div>
     <div class="form-group">
-    <label>Kategori :</label>
-    <input type="text" placeholder="Kategori" class="form-control" name="kategori" required>
-    <div class="invalid-feedback">
-        Harap masukkan Kategori.
-      </div>
+        <label>Kategori :</label>
+        <input type="text" placeholder="Kategori" class="form-control" name="kategori" required>
+        <div class="invalid-feedback">
+            Harap masukkan Kategori.
+        </div>
     </div>  
     <input type="submit" class="btn btn-primary" value="Tambah Data">
     <a href="/product" class="btn btn-outline-primary">Kembali</a>

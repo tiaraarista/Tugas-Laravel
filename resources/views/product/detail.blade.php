@@ -1,4 +1,4 @@
-@extends('tampilan')
+@extends('product.master')
 @section('content')
 <div class="container" style="margin-top: 20px ">
     <center><h2><b>Inventory Management</b></h2></center><br><br><br>

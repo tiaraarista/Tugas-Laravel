@@ -1,4 +1,4 @@
-@extends('tampilan')
+@extends('product.master')
 @section('content')
 <div class="container" style="margin-top: 20px ">
     <center><h2><b>Inventory Management</b></h2></center><br><br><br>
@@ -8,28 +8,28 @@
         <input type="hidden" name="_method" value="PUT">
         <input type="hidden" placeholder="nama" name="old_name" value="{{ $p['nama_barang'] }}">
         <div class="form-group"> 
-        <label>Kode Barang :</label>
-        <input type="text" class="form-control" placeholder="Kode Barang" name="kode_barang" value="{{ $p['kode_barang'] }}" required>
-        <div class="invalid-feedback">
-        Harap masukkan Kode Barang
-        </div>
-        </div>
-        <div class="form-group"> 
-        <label>Nama Barang :</label>
-        <input type="text" class="form-control" placeholder="Nama barang" name="name" value="{{ $p['nama_barang'] }}" required>
-        <div class="invalid-feedback">
-        Harap masukkan Nama Barang
-        </div>
+            <label>Kode Barang :</label>
+            <input type="text" class="form-control" placeholder="Kode Barang" name="kode_barang" value="{{ $p['kode_barang'] }}" required>
+            <div class="invalid-feedback">
+                Harap masukkan Kode Barang
+            </div>
         </div>
         <div class="form-group"> 
-        <label>Kategori :</label>
-        <input type="text" class="form-control" placeholder="Kategori" name="kategori" value="{{$p['kategori']}}" required>  
-        <div class="invalid-feedback">
-        Harap masukkan Kategori
+            <label>Nama Barang :</label>
+            <input type="text" class="form-control" placeholder="Nama barang" name="name" value="{{ $p['nama_barang'] }}" required>
+            <div class="invalid-feedback">
+                Harap masukkan Nama Barang
+            </div>
         </div>
+        <div class="form-group"> 
+            <label>Kategori :</label>
+            <input type="text" class="form-control" placeholder="Kategori" name="kategori" value="{{$p['kategori']}}" required>  
+            <div class="invalid-feedback">
+                Harap masukkan Kategori
+            </div>
         </div>
-        <input type="submit" class="btn btn-warning" value="Edit Data">
-        <a href="/product" class="btn btn-outline-warning">Kembali</a>
+        <input type="submit" class="btn btn-primary" value="Tambah Data">
+        <a href="/product" class="btn btn-outline-primary">Kembali</a>
     </form>
     @endforeach
 <!-- JS Validasi -->
