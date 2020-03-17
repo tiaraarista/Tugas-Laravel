@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/crud/{kategori?}', 'CrudController@index');
-
-Route::resource('crud', 'CrudController');
+Route::resource('product', 'ProductController');
