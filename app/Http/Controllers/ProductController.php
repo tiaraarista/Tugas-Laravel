@@ -12,22 +12,26 @@ class ProductController extends Controller
             [ 
                 'kode_barang' => '111',
                 'nama_barang' => 'Samsung Galaxy J5 2016',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '112',
                 'nama_barang' => 'Samsung Galaxy J5 Pro',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '113',
                 'nama_barang' => 'I-Phone 7s',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '114',
                 'nama_barang' => 'I-Phone X',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ]
 
         ];
@@ -56,22 +60,26 @@ class ProductController extends Controller
             [ 
                 'kode_barang' => '111',
                 'nama_barang' => 'Samsung Galaxy J5 2016',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '112',
                 'nama_barang' => 'Samsung Galaxy J5 Pro',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '113',
                 'nama_barang' => 'I-Phone 7s',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '114',
                 'nama_barang' => 'I-Phone X',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ]
         ];
 
@@ -89,22 +97,26 @@ class ProductController extends Controller
             [ 
                 'kode_barang' => '111',
                 'nama_barang' => 'Samsung Galaxy J5 2016',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '112',
                 'nama_barang' => 'Samsung Galaxy J5 Pro',
-                'kategori' => 'Android'
+                'kategori' => 'Android',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '113',
                 'nama_barang' => 'I-Phone 7s',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ],
             [ 
                 'kode_barang' => '114',
                 'nama_barang' => 'I-Phone X',
-                'kategori' => 'IOS'
+                'kategori' => 'IOS',
+                'Qty' => '6'
             ]
         ];
 

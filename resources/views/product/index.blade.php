@@ -30,6 +30,7 @@
                 <th><center><b>Kode Barang</b></center></th>
                 <th><center><b>Nama Barang</b></center></th>
                 <th><center><b>Kategori</b></center></th>
+                <th><center><b>Qty</b></center></th>
                 <th><center><b>Aksi</b></center></th>
             </tr>
         </thead>
@@ -39,6 +40,7 @@
                     <td>{{$p['kode_barang']}}</td>
                     <td>{{$p['nama_barang']}}</td>
                     <td>{{$p['kategori']}}</td>
+                    <td>{{$p['Qty']}}</td>
                     <td><center><a href="{{route('product.show', $p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-eye"></i> Lihat</a> 
                                 <a href="{{route('product.edit',$p['kode_barang'])}}" class="btn btn-dark"><i class="fas fa-user-edit"></i> Edit</a><br>
                                 <form action="{{route('product.destroy', $p['kode_barang'])}}" method="post">

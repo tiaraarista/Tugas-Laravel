@@ -28,6 +28,13 @@
                 Harap masukkan Kategori
             </div>
         </div>
+        <div class="form-group"> 
+            <label>Qty :</label>
+            <input type="text" class="form-control" placeholder="Qty" name="Qty" value="{{$p['Qty']}}" required>  
+            <div class="invalid-feedback">
+                Harap masukkan Qty
+            </div>
+        </div>
         <input type="submit" class="btn btn-primary" value="Tambah Data">
         <a href="/product" class="btn btn-outline-primary">Kembali</a>
     </form>
